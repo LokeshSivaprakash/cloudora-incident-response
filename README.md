@@ -1,6 +1,6 @@
 # Cloudora Incident Response - Executive Account Takeover Investigation
 
-> **Simulated client engagement
+> **Simulated client engagement**
 
 A SOC / incident-response investigation of a simulated Cloudora account-takeover incident involving password spraying, valid-account access, MFA persistence, and business-email-compromise (BEC) staging.
 
