@@ -1,0 +1,17 @@
+// Cloudora Incident Response - CLD-0001
+// Accounts targeted by the spray but never successfully authenticated
+// from the attacker infrastructure.
+let Breached = CloudoraSignIn_CL
+| where IPAddress startswith "102.89."
+| where ResultType == "0"
+| distinct UserPrincipalName;
+CloudoraSignIn_CL
+| where IPAddress startswith "102.89."
+| where ResultType == "50126"
+| where UserPrincipalName !in (Breached)
+| summarize
+    Attempts = count(),
+    FirstAttempt = min(TimeGenerated),
+    LastAttempt = max(TimeGenerated)
+    by UserPrincipalName
+| order by Attempts desc

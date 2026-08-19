@@ -1,0 +1,1 @@
+incident-response, soc, threat-hunting, cybersecurity, blue-team, detection-engineering, kql, microsoft-sentinel, mitre-attack, account-takeover, password-spraying, bec
