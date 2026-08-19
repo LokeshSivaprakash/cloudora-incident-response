@@ -1,6 +1,6 @@
-# Cloudora Incident Response — Executive Account Takeover Investigation
+# Cloudora Incident Response - Executive Account Takeover Investigation
 
-> **Simulated client engagement | MyFirstHack training project**
+> **Simulated client engagement
 
 A SOC / incident-response investigation of a simulated Cloudora account-takeover incident involving password spraying, valid-account access, MFA persistence, and business-email-compromise (BEC) staging.
 
@@ -75,9 +75,9 @@ cloudora-incident-response/
 │   ├── scope.md
 │   └── response-actions.md
 ├── data/
-│   ├── cloudora_signin_logs.csv
-│   └── cloudora_audit_logs.csv
-└── screenshots/
+   ├── cloudora_signin_logs.csv
+   └── cloudora_audit_logs.csv
+
 ```
 
 ## Recommended resume project entry
